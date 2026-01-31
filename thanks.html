@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=480">
+    <title>Дякуємо за замовлення!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 480px;
+            width: 100%;
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        .success-icon::after {
+            content: '✓';
+            color: #fff;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        h1 {
+            color: #28a745;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .message {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #ffeaa7 0%, #ffeaa7 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 88%;
+            padding: 0 5px;
+        }
+        
+        .blessing {
+            color: #b55400;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 25px;
+            padding: 20px;
+            background: #fff5f0;
+            border-radius: 10px;
+            border-left: 4px solid #b55400;
+        }
+        
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: #b55400;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-back:hover {
+            background: #8f4200;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(181, 84, 0, 0.4);
+        }
+        
+        .cross-decoration {
+            font-size: 40px;
+            color: #b55400;
+            margin: 20px 0;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon"></div>
+        
+        <h1>Дякуємо за замовлення!</h1>
+        
+        <p class="message">
+            Ваша заявка <span class="highlight">успішно відправлена</span>.
+        </p>
+        
+        <p class="message">
+            Наш менеджер зателефонує вам <span class="highlight">найближчим часом</span> для підтвердження замовлення.
+        </p>
+        
+        <div class="cross-decoration">✝</div>
+        
+        <p class="blessing">
+            Бажаємо вам мирного неба над головою!<br>
+            Нехай Господь благословить вас і вашу родину!
+        </p>
+        
+        <a href="index.html" class="btn-back">← Повернутися на головну</a>
+    </div>
+</body>
+</html>
